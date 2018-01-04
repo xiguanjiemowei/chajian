@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, ul, ol, li, dl, dd, input, button, textarea, fieldset, legend, figure, menu, th, td, pre{margin:0;padding:0;}
+body{font-size: 12px;font-family: "Arial", "Microsoft YaHei";color: #666;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;font-size: inherit;}
+a{color: #999;text-decoration: none;outline: none;}
+img{border: none;}
+ul, ol{list-style: none;}
+i, em{font-style: normal;}
+table{border-collapse: collapse;}
+td,th{padding:0}
+
+.fl{float: left;}
+.fr{float: right;}
+.container:after,
+.clearfix:after{content: "";display: block;clear: both;}
+
+.main{margin-left: 270px;padding-top: 30px;overflow: hidden;}
+.main .container{position: relative;margin-bottom: 50px;opacity: 0;}
+.main .container:first-child{opacity: 1;}
+.main h2{width: 960px;margin-bottom: 10px;font-weight: bold;font-size: 18px;color: #333;}
+.main p{width: 960px;line-height: 24px;margin-bottom: 5px;font-size: 14px;}
+.main .box{width: 960px;overflow: hidden;}
+.main .banner{float: left;width: 960px;height: 540px;margin-right: 10px;}
+.main .code{float: left;width: calc(100% - 970px);}
+.main pre{padding: 2px;border: 1px solid #23241f;}
+.main pre .hljs{font: 14px/1.4 "Consolas";}
+@media (max-width: 1580px){.main .code{width: 960px;margin-top: 5px;}}
+
