@@ -1,0 +1,100 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Kort</title>
+
+		<meta name="description" content="CSS 3D thumbnail preview concept">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/kort.css">
+	</head>
+	
+	<body>
+
+		<div class="contents">
+			<article>
+				<h1></h1>
+		<p align="center">&#36866;&#29992;&#27983;&#35272;&#22120;&#65306;FireFox&#12289;Chrome&#12289;Safari&#12289;Opera&#12289;&#20658;&#28216;&#12289;&#25628;&#29399;. &#19981;&#25903;&#25345;IE8&#12289;360&#12289;&#19990;&#30028;&#20043;&#31383;&#12290;</p>
+			</article>
+
+			<div class="sharing">
+ 
+			</div>
+
+		</div>
+
+		<h2>Default</h2>
+		<div class="thumb kort">
+			<img src="images/200.jpg" width="200" height="200">
+			<img src="images/201.jpg" width="200" height="200">
+			<img src="images/202.jpg" width="200" height="200">
+			<img src="images/203.jpg" width="200" height="200">
+			<img src="images/204.jpg" width="200" height="200">
+			<img src="images/209.jpg" width="200" height="200">
+			<img src="images/206.jpg" width="200" height="200">
+			<img src="images/207.jpg" width="200" height="200">
+			<img src="images/208.jpg" width="200" height="200">
+		</div>
+
+		<h2>Concave</h2>
+		<div class="thumb kort concave">
+			<img src="images/200.jpg" width="200" height="200">
+			<img src="images/201.jpg" width="200" height="200">
+			<img src="images/202.jpg" width="200" height="200">
+			<img src="images/203.jpg" width="200" height="200">
+			<img src="images/204.jpg" width="200" height="200">
+			<img src="images/209.jpg" width="200" height="200">
+			<img src="images/206.jpg" width="200" height="200">
+			<img src="images/207.jpg" width="200" height="200">
+			<img src="images/208.jpg" width="200" height="200">
+		</div>
+
+		<h2>Stack</h2>
+		<div class="thumb kort stack">
+			<img src="images/200.jpg" width="200" height="200">
+			<img src="images/201.jpg" width="200" height="200">
+			<img src="images/202.jpg" width="200" height="200">
+			<img src="images/203.jpg" width="200" height="200">
+			<img src="images/204.jpg" width="200" height="200">
+			<img src="images/209.jpg" width="200" height="200">
+			<img src="images/206.jpg" width="200" height="200">
+			<img src="images/207.jpg" width="200" height="200">
+			<img src="images/208.jpg" width="200" height="200">
+		</div>
+
+		<footer>
+		<p align="center">&#26469;&#28304;&#65306;<a href="http://sc.chinaz.com/" target="_blank">&#31449;&#38271;&#32032;&#26448;</a></p>
+		</footer>
+
+		<script src="js/kort.js"></script>
+
+		<script>
+			// FF OS X animates this at 3-4 FPS when there are box-shadows
+			// on the images, hence the hack... Ugh :/
+			if( navigator.userAgent.match( /firefox/gi ) ) {
+				[].slice.call( document.querySelectorAll( '.thumb img' ) ).forEach(function( el ) { el.style.boxShadow = 'none'; });
+			}
+		</script>
+
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+		<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+		    s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+
+	</body>
+</html>
