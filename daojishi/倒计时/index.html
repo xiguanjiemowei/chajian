@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=0">
+	<style>
+		*{margin: 0;padding: 0;}
+		.clear{
+			clear:both;
+		}
+		div{
+			float:left;
+			width: auto;
+			height: 100px;
+			background: #0c2345;
+			font-size: 60px;
+			color: #fff;
+			line-height: 100px;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 5px;
+			margin-right: 10px;
+			padding-left:20px;
+			padding-right:20px;
+		}
+	</style>
+</head>
+<body style="padding:30px">
+	<div id="day">--</div>
+	<div id="hours">--</div>
+	<div id="minutes">--</div>
+	<div id="seconds">--</div>
+	<script src="js/time.js"></script>
+	<script>
+		var	day = document.getElementById('day');
+		var	hours = document.getElementById('hours');
+		var	minutes = document.getElementById('minutes');
+		var seconds = document.getElementById('seconds');
+		// 日 时 分 秒的dom对象
+		countDownTime.init('2030/8/23 20:00:00', day, hours, minutes, seconds);
+		countDownTime.start();
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=0">
+	<style>
+		*{margin: 0;padding: 0;}
+		div{
+			float:left;
+			width: 100px;
+			height: 100px;
+			background: #0c2345;
+			font-size: 60px;
+			color: #fff;
+			line-height: 100px;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 5px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="day">--</div>
+	<div class="hours">--</div>
+	<div class="minutes">--</div>
+	<div class="seconds">--</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/Countdown.js"></script>
+	<script>
+		//此处为借助jQuery方法;
+		setInterval("t('2017/8/23 20:00:00')",1000);
+	</script>
+</body>
+</html>
