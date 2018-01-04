@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>返回顶部</title>
+
+    <link rel="stylesheet" href="public/css/upcss.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+
+</head>
+<body >
+<h3>我是header</h3>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+
+<h3>我是footer</h3>
+<!--返回顶部-->
+<div class="got_box hidden-xs">
+    <div class="got_box_img">
+        <div class="qrcode_wrap">
+            <span class="qrcode"></span>
+            <p>扫码关注微信公众号</p>
+        </div>
+    </div>
+    <div id="goTop" class="goTop"></div>
+</div>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var sc=$(window).scrollTop();
+        var rwidth=$(window).width()+$(document).scrollLeft();
+        var rheight=$(window).height()+$(document).scrollTop();
+        if(sc>0){
+            $("#goTop").css("display","block");
+            $('.got_box_img').css('border-radius','5px 5px 0 0');
+        }else{
+            $("#goTop").css("display","none");
+            $('.got_box_img').css('border-radius','5px');
+        }
+    });
+    $("#goTop").click(function(){
+        $('body,html').animate({scrollTop:0},1000);
+    });
+</script>
+
+</body>
+</html>
+

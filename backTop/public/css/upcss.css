@@ -1,0 +1,1474 @@
+
+ /*轮播图下ul*/
+ .label_t{
+   width: 100%;
+   background: #f7f7f7;
+   margin: 0;
+   height: auto;
+   overflow: hidden;
+ }
+.label_t li{
+  float: left;
+  width: 33.33%;
+  height: 130px;
+  position: relative;
+}
+.label_t .label_t1{
+  padding:3.2em 0;
+}
+.label_t .label_t1 p{
+  color: #8dc63f;
+  margin: 0;
+  text-align: center;
+  line-height: 40px;
+  font-size:16px ;
+  border-right:1px solid #8dc63f;
+}
+.label_t .label_t2{
+ opacity: 0;
+  width: 100%;
+  background: #8dc63f;
+  color: #fff;
+  text-align: center;
+  height: 130px;
+  position: absolute;
+  top:0;
+  left :0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.label_t .label_t2 p{
+  padding-top: 1.8em;
+  line-height: 40px;
+  font-size:16px ;
+  margin-bottom: 20px;
+}
+.label_t .label_t2 a{
+  padding: 0.3em 1.1em;
+  background: #fff;
+  color: #8dc63f;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+.label_t li:hover .label_t2{
+  opacity: 1;
+}
+.course_list{
+  overflow: hidden;
+  padding: 20px 0;
+}
+.course_list .course_title {
+  font-size:22px ;
+  font-weight: bold;
+  color: #00335c;
+  text-align: center;
+}
+.course_list .line{
+  width: 100%;
+  height: 1px;
+  background: #e6e7e8;
+  margin-top: 32px;
+}
+
+/*热门课程*/
+.hot_text{
+  opacity: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 20px 15px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.slick-slide:hover .hot_text{
+ opacity: 1;
+}
+.hot_text h4 {
+  font-size: 14px;
+  padding:0  10px;
+  height: 50px;
+  line-height: 1.2;
+}
+.hot_text p {
+   font-size: 14px;
+   line-height: 1.2;
+   margin-bottom: 10px;
+ }
+.hot_text span{
+  color: #8dc63f;
+  font-size: 14px;
+}
+.hot_text span small{
+  color: #fff;
+}
+
+/*精品课程*/
+.fine_course{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.fine_course_nav{
+  width: 80%;
+  margin: auto;
+}
+.fine_course_nav li{
+  width: 16.66%;
+  margin: 0;
+  text-align: center;
+}
+.fine_course_nav li a{
+  display: inline-block !important;
+  font-size: 1.2em;
+  color: #616161;
+  text-align: center;
+}
+.fine_course_nav li.active a,.fine_course_nav li a:hover,.fine_course_nav li a:focus,.fine_course_nav li a:active{
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #8dc63f !important;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.fine_course_text{
+  width: 100%;
+  /*overflow: hidden;*/
+  height: auto;
+}
+.Details_box_img{
+  overflow: hidden;
+}
+.fine_course_text img,.Details_box img{
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.Details_box img:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.fine_course_img{
+  transition: box-shadow .3s ease;
+  -webkit-transition: box-shadow .3s ease;
+}
+.fine_course_img:hover{
+  box-shadow:0 5px 15px rgba(0,0,0,.18);
+  -webkit-box-shadow:0 5px 15px rgba(0,0,0,.18)
+}
+.fine_course_l{
+  padding: 0 !important;
+  position: relative;
+  margin-bottom: 5px;
+}
+.fine_course_text .col_8{
+  padding:0!important;
+}
+.fine_course_text .list_div{
+  /*overflow:hidden;*/
+  padding:0  5px !important;
+ }
+.fine_course_content{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top:0;
+  left:0;
+  border-left:10px solid #fff ;
+  border-right:10px solid #fff ;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.fine_course_content h4{
+  font-size: 14px;
+  padding: 10px 10px 0;
+  line-height: 1.2;
+  color: #fff;
+  overflow: hidden;
+}
+.fine_course_content p{
+  color: #fff;
+  margin-bottom: 0;
+}
+.fine_course_content span{
+  color: #8dc63f;
+  font-size: 12px;
+}
+.fine_course_content span small{
+  color: #fff;
+}
+.fine_course_l:hover .fine_course_content{
+  opacity: 1;
+}
+.Details_box{
+  background: #fff;
+  /*border: 1px solid #ddd;*/
+  /*transition: box-shadow .3s ease;*/
+  /*-webkit-transition: box-shadow .3s ease;*/
+  margin-bottom: 1.5em;
+  padding-bottom: 2px;
+  position: relative;
+}
+/*.Details_box:hover{*/
+  /*box-shadow:0 5px 15px rgba(0,0,0,.18);*/
+  /*-webkit-box-shadow:0 5px 15px rgba(0,0,0,.18)*/
+/*}*/
+.Details_course{
+  width: 100%;
+  padding: 5px 5px 0;
+  color: #616161;
+  background: #fff;
+}
+.Details_course .Details_course_p{
+  font-size: 1em;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  color: #333;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Details_course .Details_course_p:hover{
+  color: #000;
+  font-weight: 600;
+}
+.Details_text {
+  width: 100%;
+  /*overflow: hidden;*/
+}
+ .Details_text .jiaoshi{
+   width: 52%;
+ }
+.Details_text .jiaoshi_n{
+	font-size: 12px;
+	color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+ .Details_text .person_m{
+  float: right;
+   text-align: right;
+   width: 45%;
+   margin:0;
+   color: #8dc63f;
+   font-size: 1em;
+}
+
+.Details_text p small{
+	font-size: 12px;
+	color: #999;
+}
+.home_more{
+  text-align: right;
+  margin-bottom: 15px;
+}
+.home_more a{
+  color: #8dc63f;
+  font-size: 12px;
+  border: 1px solid #8dc63f;
+  margin-bottom: -1px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3px 10px;
+  margin-right: 3px;
+}
+.home_more a:hover{
+  background-color: #f4fbeb;
+}
+/*经典演讲*/
+.speech_course{
+  padding: 20px 15px 15px;
+  width: 100%;
+  overflow: hidden;
+}
+.speech_course .speech_course_p{
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.speech_course .speech_course_p:hover{
+  color: #000;
+  font-weight: 600;
+}
+.speech_text{
+ color: #616161;
+  width: 100%;
+  overflow: hidden;
+}
+.speech_text i{
+  width: 57%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	color: #999;
+}
+.speech_text p{
+  width: 40%;
+  float: right;
+  margin:-3px  0;
+  color: #8dc63f;
+  font-size: 1.2em;
+  text-align: right;
+}
+.speech_text p small{
+  color: #999;
+}
+
+/*热门话题*/
+.topic{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.topic_ul{
+  width: 100%;
+}
+#look_1 .topic_ul li{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.topic_ul li p{
+  font-size: 14px;
+  color: #868686;
+  line-height: 1.6;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+  text-align: left;
+}
+.topic_ul li p span{
+  padding: 0 6px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.hot_li1 span{
+  background: #ff6633;
+}
+.hot_li2 span{
+  background: #ff9933;
+}
+.hot_li3 span{
+  background: #ffcc33;
+}
+.hot_li span{
+  background: #c2c2c2;
+}
+.topic_box{
+  width: 100%;
+  overflow: hidden;
+}
+.topic_box img{
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.topic_box img:hover{
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.topic_img{
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.topic_content{
+  background: #fff;
+  /*border: 1px solid #ddd;*/
+  /*transition: box-shadow .3s ease;*/
+  /*-webkit-transition: box-shadow .3s ease;*/
+  margin-bottom: 1.5em;
+  padding-bottom: 2px;
+}
+/*.topic_content:hover{*/
+  /*box-shadow:0 5px 15px rgba(0,0,0,.18);*/
+  /*-webkit-box-shadow:0 5px 15px rgba(0,0,0,.18)*/
+/*}*/
+.topic_course{
+  padding: 10px;
+}
+.topic_course_p{
+  color: #333;
+  line-height: 1.6;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.topic_course_p:hover{
+  color: #000;
+  font-weight: 600;
+}
+.topic_course .topic_text{
+  width: 100%;
+  overflow: hidden;
+}
+.topic_text i{
+  width: 55%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+.topic_text p{
+  width: 42%;
+  float: right;
+  margin: 0;
+  color: #8dc63f;
+  font-size: 1em;
+  text-align: right;
+}
+.topic_text p small{
+  color: #999;
+}
+.topic_img_text{
+  opacity: 0;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 15px 10px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.topic_img_text h4{
+  margin-top: 30px;
+  padding: 0 15px;
+}
+.topic_img_text p{
+  line-height: 1.8;
+}
+.topic_img_text span{
+  color: #8dc63f;
+  font-size: 16px;
+}
+.topic_img_text span small{
+  color: #fff;
+}
+.topic_img:hover .topic_img_text{
+ opacity: 1;
+}
+.topic_btn{
+  width: 40%;
+  margin: 0 auto 10px;
+  color: #fff;
+  background: #8dc63f;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  line-height: 30px;
+  transition: box-shadow .3s ease;
+  -webkit-transition: box-shadow .3s ease;
+}
+.topic_btn:hover,.topic_btn:active,.topic_btn:focus{
+  box-shadow:0 3px 10px rgba(0,0,0,.18);
+  -webkit-box-shadow:0 3px 10px rgba(0,0,0,.18)
+}
+.topic_btn a{
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+}
+
+@media  (min-width: 768px){
+  .topic_ul li{
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 5px 14px;
+  }
+  .topic_ul li p{
+    font-size: 16px;
+    line-height: 1.8;
+    padding-top: 15px;
+  }
+  .topic_ul li p span{
+    padding: 3px 10px;
+    margin-right: 15px;
+  }
+  .topic_btn{
+    margin: 30px auto;
+    font-size: 16px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    line-height: 50px;
+  }
+  .topic_btn:hover{
+    box-shadow:0 5px 15px rgba(0,0,0,.18);
+    -webkit-box-shadow:0 5px 15px rgba(0,0,0,.18)
+  }
+}
+@media  (min-width: 992px){
+  .topic_ul li{
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+    padding: 11px 5px 14px;
+  }
+}
+@media  (min-width: 1200px){
+  .topic_ul li{
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 5px 14px;
+  }
+}
+/*合伙人*/
+.partner_box{
+  background: url(../images/p_b.jpg);
+}
+.Brand_content{
+  width: 100%;
+  overflow: hidden;
+  padding:20px 0 70px;
+}
+.Brand_content .Brand{
+  width: 20%;
+  float: left;
+  position: relative;
+}
+.Brand_content .Brand .round{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width:50%;
+  margin: auto;
+}
+.Brand_content .Brand .none_img{
+  display: none;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.Brand_content .Brand:hover .none_img{
+  display: block;
+}
+.hot_img .partner_logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50% ;
+  -webkit-border-radius: 50%;
+}
+
+/*适配*/
+@media (min-width: 768px) {
+  #margin_top{
+    margin-top: 75px;
+  }
+  #margin_top1{
+    margin-top:75px;
+  }
+  #myCarousel{
+    margin-top:75px;
+  }
+  #myCarousel .carousel-control{
+    font-size: 3em;
+    top: 35%;
+  }
+  .course_list .course_title {
+    font-size: 22px;
+  }
+  .fine_course_nav li a {
+    font-size: 1em;
+  }
+  .fine_course_l,  .fine_course_text .list_div{
+    padding:0  5px !important;
+  }
+  /*.fine_course_text .col_8{*/
+    /*padding:0 0 0 5px !important;*/
+  /*}*/
+  .Details_course .Details_course_p {
+    font-size: 1em;
+    line-height: 1;
+    margin-bottom:2px;
+  }
+  .Details_course {
+    padding: 5px 5px 0;
+  }
+  .Details_text .jiaoshi{
+    width: 52%;
+  }
+  .Details_text .person_m{
+    width: 45%;
+    font-size: 1em;
+  }
+  .fine_course_content h4 {
+    font-size: 14px;
+    padding: 10px 10px 0;
+    line-height: 1.2;
+    height: 60px;
+  }
+  .fine_course_content p {
+   margin-bottom: 0;
+  }
+  .fine_course_content span {
+    font-size: 12px;
+  }
+  .hot_text {
+    padding: 10px 15px;
+  }
+  .hot_text h4 {
+    font-size: 14px;
+    padding:0  10px;
+    height: 40px;
+    line-height: 1.2;
+  }
+  .hot_text p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .topic_img_text h4 {
+    margin-top: 50px;
+    height: 80px;
+    line-height: 1.8;
+    padding: 0 15px;
+  }
+  .topic_img_text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .topic_img_text span {
+    font-size: 18px;
+  }
+  .hot_img .partner_logo{
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: 992px) {
+  #margin_top{
+    margin-top: 85px;
+  }
+  #margin_top1{
+    margin-top: 75px;
+  }
+  #myCarousel{
+    margin-top: 75px;
+  }
+  #myCarousel .carousel-control{
+    font-size: 4em;
+    top: 35%;
+  }
+  .course_list .course_title {
+    font-size: 24px;
+  }
+  .fine_course_nav li a {
+    font-size: 1.2em;
+  }
+  .fine_course_l,  .fine_course_text .list_div{
+    padding:0 10px !important;
+  }
+  /*.fine_course_text .col_8{*/
+    /*padding:0 0 0 10px !important;*/
+  /*}*/
+  .Details_course .Details_course_p {
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin-bottom:5px;
+  }
+  .Details_course {
+    padding: 10px 10px 0;
+  }
+  .Details_text .jiaoshi{
+    width: 52%;
+  }
+  .Details_text .person_m{
+    width: 45%;
+    font-size: 1em;
+  }
+  .fine_course_content h4 {
+    font-size: 16px;
+    padding: 15px 10px 0;
+    line-height: 1.4;
+    height: 85px;
+  }
+  .fine_course_content p {
+    margin-bottom: 5px;
+  }
+  .fine_course_content span {
+    font-size: 14px;
+  }
+  .hot_text {
+    padding: 15px 15px;
+  }
+  .hot_text h4 {
+    font-size: 16px;
+    padding:0  5px;
+    height: 60px;
+    line-height: 1.4;
+  }
+  .hot_text p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .topic_img_text h4 {
+    margin-top: 16px;
+    height: 50px;
+    line-height: 1.8;
+    padding: 0 15px;
+  }
+  .topic_img_text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .topic_img_text span {
+    font-size: 16px;
+  }
+  .Brand_content .Brand {
+    padding: 0;
+  }
+   .Brand_content .Brand .none_img{
+     top:2px;
+     left:0;
+   }
+  .Brand_content .Brand .round{
+    width:50%;
+  }
+  .Brand_content .Brand .none_img {
+    top: 0;
+    left: 0;
+  }
+  .hot_img .partner_logo{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width:1200px) {
+  #margin_top{
+    margin-top:85px;
+  }
+  #margin_top1{
+    margin-top: 75px;
+  }
+  #myCarousel{
+    margin-top: 75px;
+  }
+  #myCarousel .carousel-control{
+    font-size: 4em;
+    top: 40%;
+  }
+  .Details_course .Details_course_p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .Details_course {
+    padding: 10px 10px 5px;
+  }
+  .Details_text .jiaoshi{
+    width:60%;
+  }
+  .Details_text .person_m{
+    width: 37%;
+    font-size: 1em;
+  }
+  .fine_course_content h4 {
+    font-size: 16px;
+    padding: 30px 15px 20px;
+    line-height: 1.6;
+    height: 90px;
+  }
+  .fine_course_content span {
+    font-size: 16px;
+  }
+  .hot_text {
+    padding: 20px 15px;
+  }
+  .hot_text h4 {
+    font-size: 16px;
+    padding:0  10px;
+    height: 70px;
+    line-height: 1.6;
+  }
+  .hot_text p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .Brand_content .Brand {
+    padding: 20px;
+  }
+  .Brand_content .Brand .round{
+    width:55%;
+  }
+  .Brand_content .Brand .none_img{
+    top:20px;
+    left:20px;
+  }
+  .hot_img .partner_logo{
+    width: 120px;
+    height: 120px;
+  }
+}
+/*返回顶部*/
+.got_box{
+  width:40px;
+  height:80px;
+  position: fixed;
+  right: 20px;
+  bottom:50px;
+}
+.got_box .got_box_img{
+  width:40px;
+  height:40px;
+  background: #fff url(../images/7X.png) 50% 9px no-repeat;
+  border-radius: 5px ;
+  -webkit-border-radius: 5px;
+  border:solid 1px #ddd;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.qrcode_wrap {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+  color: #999;
+  font-size: .85em;
+  margin-right: 10px;
+  display: none;
+  border: 1px solid #dbdbdb;
+  white-space: nowrap;
+}
+.qrcode {
+  width: 111px;
+  height: 111px;
+  background: url(../images/7Z.png) 0 0 no-repeat;
+  background-size: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+.got_box .got_box_img:hover .qrcode_wrap{
+  display: block;
+}
+#goTop{
+  position:absolute;
+  display:none;
+  width:40px;
+  height:40px;
+  background:#fff url(../images/7X.png) no-repeat 50% -30px;
+  border:solid 1px #ddd;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
+  cursor:pointer
+}
+#goTop:hover{
+  box-shadow:0 5px 5px rgba(0, 0, 0, 0.3)
+}
+
+/*手机版首页*/
+.visible-xs-block{
+  overflow: hidden;
+}
+.course_sort{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.sort_title{
+  width: 100%;
+}
+.sort_title p{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.sort_title p span{
+  font-size: 16px;
+  font-weight: bold;
+  color: #8dc63f;
+}
+.sort_title a{
+  float: right;
+  line-height: 1.6;
+  font-size: 12px;
+  color: #333;
+}
+.sort_icon{
+  width: 100%;
+  overflow: hidden;
+}
+.sort_icon li{
+  width: 20%;
+  float: left;
+}
+.sort_icon li img{
+ margin: 15px auto 10px;
+}
+/*文字上下滚动*/
+.news_box{
+  background: #f4f6f8;
+  padding: 5px 0;
+}
+.t_news{
+  width: 100%;
+  height:30px;
+  line-height:30px;
+  color:#333;
+  overflow:hidden;
+  position:relative;
+  background:#fff;
+}
+.t_news b{
+  line-height:30px;
+  font-weight:bold;
+  display:inline-block;
+}
+.news_li,.swap{
+  width: 100%;
+  line-height:30px;
+  display:inline-block;
+  position:absolute;
+  top:0;
+  left:0;
+  padding:0  10px;
+}
+.news_li a,.swap a{
+  display: block;
+  width: 100%;
+  color:#333;
+}
+.news_li a span,.swap a span{
+  float: right;
+  color: #333;
+}
+.swap{
+  top:23px;
+}
+
+/*热门课程*/
+.xs_course_hot{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0 10px;
+  background: #fff;
+}
+.xs_course_top{
+
+}
+.xs_course_title{
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  line-height:1.8 ;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.xs_course_title span{
+  font-size: 14px;
+  color: #bec2c8;
+  line-height:1.8 ;
+}
+.xs_course_more{
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.8;
+}
+/*经典演讲*/
+.img_text{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 10px;
+}
+.img_text img{
+  width: 100%;
+}
+.img_text .xs_course_pos{
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  padding: 0 10px;
+}
+.img_text .xs_course_pos p{
+  margin: 0;
+  width: 70%;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.img_text .xs_course_pos span{
+  color: #8dc63f;
+  float: right;
+  width: 28%;
+  line-height: 30px;
+  text-align: right;
+}
+.xs_course_list{
+  width: 100%;
+  padding: 0 0 10px;
+  overflow: hidden;
+}
+.xs_course_list h6{
+  margin: 0;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.xs_course_list p{
+  color: #8dc63f;
+  padding-top: 15px;
+}
+.xs_course_line{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.xs_course_line h6{
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding: 10px 0 0;
+  height: 48px;
+  margin-bottom: 10px;
+}
+.xs_course_line p{
+  color: #8dc63f;
+  padding: 0;
+}
+
+/*最热话题*/
+.list_news_video{
+  width: 100%;
+  overflow:hidden;
+  height: auto;
+}
+.news_video_ul{
+  width: 50%;
+  margin: auto;
+  padding: 5px 0;
+}
+.news_video_ul li{
+  width: 50%;
+  text-align: center;
+  height:30px;
+  line-height: 30px;
+}
+.news_video_ul li a{
+  display: inline !important;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 5px 8px !important;
+  font-size: 12px;
+}
+.news_video_ul li a:hover{
+  background: #8dc63f !important;
+  color: #fff;
+}
+.news_video_ul li.active a{
+  background:#8dc63f !important;
+  color: #fff;
+}
+/*用户协议*/
+.Agreement{
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.Agreement_title{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom:1px solid #ddd;
+  margin:0 ;
+  padding: 15px 0 10px;
+}
+.Agreement_text{
+  padding: 0 15px;
+}
+.Agreement_text h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+.Agreement_text p{
+  font-size: 14px;
+  line-height: 2;
+}
+@media (min-width: 768px) {
+  .Agreement{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  .Agreement_title{
+    font-size: 22px;
+    margin:0 ;
+    padding: 25px 0 15px;
+  }
+  .Agreement_text{
+    padding: 0 20px;
+  }
+  .Agreement_text h3{
+    font-size: 20px;
+  }
+  .Agreement_text p{
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+/*教师提现*/
+.teacher_tc{
+  background: #fff;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.teacher_title{
+  width: 100%;
+  height: auto;
+ padding: 15px;
+}
+.teacher_title .teacher_nav{
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.teacher_title .teacher_nav li{
+  width: 120px;
+}
+.teacher_title .teacher_nav li a{
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 0;
+}
+.teacher_title .teacher_nav .active a{
+  color: #8dc63f;
+  border-bottom: 2px #8dc63f solid;
+  background: #fff;
+}
+.teacher_title .teacher_nav li a:hover,.teacher_title .teacher_nav li a:active,.teacher_title .teacher_nav li a:focus{
+  color: #8dc63f;
+  background: #fff;
+  border-bottom: 2px #8dc63f solid;
+}
+.teacher_content{
+  padding: 5px 15px;
+}
+.cash_li{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.cash_li i{
+  display:inline-block;
+  color: #fff;
+  background: #8dc63f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  width: 90px;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.cash_button{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 15px 0 30px;
+}
+.cash_button a{
+  float: right;
+  padding: 5px 10px;
+  color: #fff;
+  background: #ff9400;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  width: 90px;
+  font-size: 18px;
+  text-align: center;
+}
+.cash_button b{
+  text-align: left;
+  font-size: 22px;
+ padding: 5px 0;
+  color:#ff9400 ;
+}
+.cash_content{
+  background: #f8f8f8;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 10px 30px 10px 15px;
+  font-size: 18px;
+}
+.cash_content span{
+  float: right;
+}
+.cash_content th{
+  border-bottom: none !important;
+  font-weight: normal;
+}
+.income_list{
+  padding: 15px 0 8px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.income_div .income_list:last-child{
+  border-bottom:none;
+}
+.income_list .right_mony{
+  text-align: right;
+  font-size: 18px;
+  color: #ff9400;
+  padding-right: 30px;
+}
+.cash_tbody>tr>td{
+  font-size: 16px;
+  padding: 12px 0;
+  border: none !important;
+}
+.cash_tbody .cash_ing{
+  color: #8dc63f;
+}
+.cash_li_title{
+  text-align: right;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.cash_li_title b{
+  font-size: 18px;
+  color: #ff9400;
+}
+.cash_way{
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  padding:10px 20px;
+  border: 1px solid #8dc63f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin: 20px 0;
+}
+.cash_way span{
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.cash_way div{
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+  float: right;
+  text-align: right;
+}
+.cash_way div b{
+  color: #ff9400;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.reg_div{
+  width: 100%;
+  overflow: hidden;
+}
+.reg_div p{
+  font-size: 14px;
+  text-align: left;
+}
+.reg_ul{
+  padding: 10px 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: none !important;
+}
+.reg_ul li{
+  float: left;
+  width: 45% !important;
+  height: 82px;
+  text-align: left !important;
+}
+.reg_ul li p{
+  margin: 0;
+}
+.reg_ul li p b{
+  color: #ff0000;
+}
+.reg_ul li input{
+  display: inline-block;
+  border: 1px solid #333;
+  width: 80%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.sure_button{
+  width: 100%;
+  margin: 30px 0;
+}
+.sure_button p{
+  font-size: 12px;
+  color: #ff0000;
+  text-align: center;
+}
+.sure_button h6{
+  text-align: center;
+  font-size: 16px;
+  color: #ff9400;
+  display: none;
+}
+.sure_button button{
+  display: block;
+  border: none;
+  background: #ff9400;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  color: #fff;
+  width: 30%;
+  margin: auto;
+  line-height: 50px;
+}
+.teacher_data{
+  width: 100%;
+  padding: 10px 0;
+}
+.teacher_data img{
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+  border-radius:50% ;
+  -webkit-border-radius: 50%;
+}
+.teacher_data span{
+  line-height: 30px;
+  font-size: 16px;
+}
+.teacher_infor{
+  display: none;
+  position: absolute;
+  bottom: 45px;
+  left: -100px;
+  width: 280px;
+  height: 180px;
+  background: url("../images/teacher.png") 50% 50% no-repeat;
+  background-size: cover;
+  padding: 18px 10px;
+  border:1px solid #dcdcdc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow:0 4px 15px rgba(0,0,0,.3);
+  -webkit-box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+.jiaoshi:hover .teacher_infor{
+  display: block;
+}
+ .teacher_infor img{
+   width: 70px;
+   height: 70px;
+   border-radius: 50% ;
+   -webkit-border-radius:50%;
+   padding: 3px;
+   background: -moz-linear-gradient( top,#8dc63f,#fff);
+   background: -webkit-linear-gradient( top,#8dc63f,#fff);
+   background: -o-linear-gradient( top,#8dc63f,#fff);
+ }
+ .teacher_infor p{
+   width: 100%;
+   text-align: center;
+   margin: 5px;
+   color: #fff;
+   font-size: 14px;
+ }
+ .teacher_infor b{
+   display: block;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   font-size: 14px;
+   height: 40px;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   word-break: break-all !important;
+   word-wrap:break-word !important;
+ }
+ .teacher_infor span{
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-top: 10px solid #8dc63f;
+   position: absolute;
+   bottom: -10px;
+   left: 130px;
+
+ }
