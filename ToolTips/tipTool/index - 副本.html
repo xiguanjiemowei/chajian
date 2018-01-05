@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>tip tools</title>
+<base target="_blank" />
+<meta name="Keywords" content="tip tools" />
+<meta name="Description" content="tip tools" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+<link rel="stylesheet" href="just-tip.css">
+<script src="justTools.js"></script>
+
+<style>
+.textTips_shubiao{border:1px solid #ccc;background:#f0f0f0;display:inline-block;width:200px;height:40px;line-height:40px;margin:10px;margin-top: 250px;}
+
+.just-tooltip{
+	background: #fff;
+	box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+	max-width: 360px;
+	padding: 20px 30px 40px;
+	font-size: 14px;
+	text-align:justify;
+	text-justify: distribute;
+	opacity: 0.5;
+	filter:Alpha(opacity=40);
+}
+.just-tooltip .just-con{padding:8px 10px;color:#282828;}
+
+.just-tooltip .just-right{ left:-7px; top:50%;border-width: 5px 7px 5px 0;margin-top:-5px;
+	border-color: transparent #fff transparent transparent;
+	_border-color:#fff;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#fff');
+}
+</style>
+</head>
+
+<body>
+
+	<p class="textTips_shubiao demoRight">右边提示:  排队到八点半开始抽签，到赵莉她已经被排到了 700 多号，在她之后还有 1300 多人。1987 年，对肯德基还不了解的赵莉和 2000 多人一起到肯德基面试。
+		跟赵莉一起来的人，有正在上大学的学生，有不少人还不到二十岁。
+		翻开当时的历史，这一年，在健力宝的刺激下， 宗庆后成立了哇哈哈；
+		对未来还很迷茫的任正非创办了华为；
+		同样是在这一年，作为 IBM 在中国最大的代理商，柳传志带着联想离开了 IBM。</p>
+
+<script>
+
+
+	$(".demoRight").mouseover(function(event){
+		var _this = $(this);
+		_this.justToolsTip({
+			events:event,
+	        animation:"moveInRight",
+	        //width:"300px",
+	        contents:$(this).text(),
+	        gravity:'right'
+	    });
+	});
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 工具提示（Tooltip）插件</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .tooltip-inner {
+            max-width: 360px;
+            padding: 20px 30px 40px;
+            color: #282828;
+            text-align:justify;
+            text-justify: distribute;
+            background-color: #fff;
+            box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+            border-radius: 6px;
+        }
+        .tooltip.right .tooltip-arrow {
+            top: 50%;
+            left: 0;
+            margin-top: -5px;
+            border-width: 5px 5px 5px 0;
+            border-right-color: #fff
+        }
+    </style>
+</head>
+<body>
+
+<h4>工具提示（Tooltip）插件 - 锚</h4>
+这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的 Tooltip">默认的 Tooltip</a>.
+这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">左侧的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">顶部的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">底部的 Tooltip</a>.
+这是一个 <a href="#" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">右侧的 Tooltip</a>
+<br>
+<h4>工具提示（Tooltip）插件 - 按钮</h4>
+<button type="button" class="btn btn-default" data-toggle="tooltip"  title="默认的 Tooltip"> 默认的 Tooltip</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">左侧的 Tooltip
+</button>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的 Tooltip">顶部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="底部的 Tooltip">底部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="  排队到八点半开始抽签，到赵莉她已经被排到了 700 多号，在她之后还有 1300 多人。1987 年，对肯德基还不了解的赵莉和 2000 多人一起到肯德基面试。
+    跟赵莉一起来的人，有正在上大学的学生，有不少人还不到二十岁。
+    翻开当时的历史，这一年，在健力宝的刺激下， 宗庆后成立了哇哈哈；
+    对未来还很迷茫的任正非创办了华为；
+    同样是在这一年，作为 IBM 在中国最大的代理商，柳传志带着联想离开了 IBM。">右侧的 Tooltip</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title=" 22222 排队到八点半开始抽签，到赵莉她已经被排到了 700 多号，在她之后还有 1300 多人。1987 年，对肯德基还不了解的赵莉和 2000 多人一起到肯德基面试。
+    跟赵莉一起来的人，有正在上大学的学生，有不少人还不到二十岁。
+    翻开当时的历史，这一年，在健力宝的刺激下， 宗庆后成立了哇哈哈；
+    对未来还很迷茫的任正非创办了华为；
+    同样是在这一年，作为 IBM 在中国最大的代理商，柳传志带着联想离开了 IBM。">右侧的 Tooltip</button>
+<script>
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+</body>
+</html>
